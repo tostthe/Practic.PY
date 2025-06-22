@@ -1,0 +1,10 @@
+torch==1.10.2+cpu
+torchvision==0.11.3+cpu
+torchaudio==0.10.2
+numpy==1.19.5
+pandas==1.1.5
+matplotlib==3.3.4
+pillow==8.3.2
+opencv-python==4.5.5.64
+scikit-learn==0.24.2
+PyQt5==5.15.6
