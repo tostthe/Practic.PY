@@ -8,6 +8,9 @@
 import logging
 import sys
 import os
+import platform
+import cv2
+from PyQt5.QtCore import QT_VERSION_STR, PYQT_VERSION_STR
 from datetime import datetime
 from pathlib import Path
 
@@ -144,10 +147,6 @@ class ErrorHandler:
         """Логирование информации о системе"""
         
         try:
-            import platform
-            import cv2
-            from PyQt5.QtCore import QT_VERSION_STR, PYQT_VERSION_STR
-            
             info = {
                 'Python': platform.python_version(),
                 'Platform': platform.platform(),
