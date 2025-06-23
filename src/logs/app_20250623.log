@@ -1,6 +1,0 @@
-2025-06-23 17:15:07 - utils.error_handler - INFO - Система логирования инициализирована
-2025-06-23 17:15:07 - gui.main_window - INFO - Главное окно инициализировано
-2025-06-23 17:15:07 - __main__ - INFO - Приложение успешно запущено
-2025-06-23 17:15:15 - utils.file_handler - INFO - Изображение загружено: C:/Users/Admin/Downloads/-QOYx1yO0r8.jpg
-2025-06-23 17:15:15 - gui.main_window - INFO - Изображение загружено: C:/Users/Admin/Downloads/-QOYx1yO0r8.jpg
-2025-06-23 17:15:18 - gui.main_window - INFO - Приложение закрыто
