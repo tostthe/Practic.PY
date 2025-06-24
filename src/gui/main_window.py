@@ -215,7 +215,7 @@ class ImageProcessorWindow(QMainWindow):
         self.control_panel.capture_frame_requested.connect(self.capture_frame)
         self.control_panel.channel_changed.connect(self.change_channel)
         self.control_panel.processing_requested.connect(self.process_image)
-        self.control_panel.save_image_requested.connect(self.save_image)  # Новое соединение
+        self.control_panel.save_image_requested.connect(self.save_image)
         
         # Соединения с обработчиком изображений
         self.image_loaded.connect(self.control_panel.on_image_loaded)
