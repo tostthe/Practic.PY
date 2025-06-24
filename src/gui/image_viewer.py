@@ -18,8 +18,8 @@ class ImageViewer(QWidget):
     """Виджет для отображения изображений"""
     
     # Сигналы
-    image_clicked = pyqtSignal(int, int)  # x, y координаты клика
-    zoom_changed = pyqtSignal(float)      # Новый масштаб
+    image_clicked = pyqtSignal(int, int)
+    zoom_changed = pyqtSignal(float)
     crop_applied = pyqtSignal(object)
     
     def __init__(self):
