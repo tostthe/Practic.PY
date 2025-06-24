@@ -418,13 +418,12 @@ class ControlPanel(QWidget):
         kernel_size, ok = QInputDialog.getInt(
             self, "Размытие изображения", 
             "Введите размер ядра (нечетное число):",
-            5, 3, 31, 2  # Шаг 2, чтобы легче было вводить нечетные
+            5, 3, 31, 2  
         )
         
         if not ok:
             return
         
-        # Если ввели четное, делаем нечетным (ядро должно быть нечетным)
         if kernel_size % 2 == 0:
             kernel_size += 1
             QMessageBox.information(self, "Корректировка", 
@@ -576,7 +575,7 @@ class ControlPanel(QWidget):
             self.file_info_label.setText(info_text)
             
             # Сброс обработанного изображения
-            self.parent().processed_image = None  # <-- Добавленная строка
+            self.parent().processed_image = None
         else:
             # Выключение кнопок обработки
             for btn in self.processing_buttons:
