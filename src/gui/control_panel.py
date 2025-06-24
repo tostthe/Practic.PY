@@ -4,7 +4,8 @@
 Содержит элементы управления для загрузки изображений,
 работы с камерой, выбора RGB каналов и функций обработки.
 """
-
+import torch
+import cv2
 from PyQt5.QtWidgets import (
     QWidget, QVBoxLayout, QHBoxLayout, QGroupBox, 
     QPushButton, QComboBox, QLabel, QSlider, QSpinBox,
@@ -209,13 +210,11 @@ class ControlPanel(QWidget):
         
         # Информация о библиотеках
         try:
-            import cv2
             opencv_version = cv2.__version__
         except ImportError:
             opencv_version = "не установлен"
         
         try:
-            import torch
             pytorch_version = torch.__version__
         except ImportError:
             pytorch_version = "не установлен"
