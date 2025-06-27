@@ -29,7 +29,7 @@ def main():
         app.setAttribute(Qt.AA_EnableHighDpiScaling, True)
         app.setApplicationName("Обработка изображений")
         app.setApplicationVersion("1.0")
-        app.setOrganizationName("Университет")
+        app.setOrganizationName("")
         
         # Создание и отображение главного окна
         window = ImageProcessorWindow()
